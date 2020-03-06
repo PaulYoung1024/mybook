@@ -86,7 +86,8 @@ func InMap(maps map[int]bool, key int) (ret bool) {
 //分页函数（这个分页函数不具有通用性）
 //rollPage:展示分页的个数
 //totalRows：总记录
-//currentPage:每页显示记录数
+//listRows:每页显示记录数
+//currentPage:页码
 //urlPrefix:url链接前缀
 //urlParams:url键值对参数
 func NewPaginations(rollPage, totalRows, listRows, currentPage int, urlPrefix string, urlSuffix string, urlParams ...interface{}) html1.HTML {
